@@ -8,6 +8,7 @@ int	ft_isalnum(int c)
 	return (0);
 }
 
+/*
 #include <stdio.h>
 #include <ctype.h>
 int	main()
@@ -19,3 +20,4 @@ int	main()
 	printf("5: %d = %d\n", ft_isalnum('5'), isalnum('5'));
 	printf("[: %d = %d\n", ft_isalnum('['), isalnum('['));
 }
+*/

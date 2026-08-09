@@ -8,6 +8,7 @@ int	ft_isdigit(int c)
 	return (0);
 }
 
+/*
 #include <stdio.h>
 #include <ctype.h>
 int	main()
@@ -19,3 +20,4 @@ int	main()
 	printf("@: %d = %d\n", ft_isdigit('@'), isdigit('@'));
 	printf("[: %d = %d\n", ft_isdigit('['), isdigit('['));
 }
+*/
