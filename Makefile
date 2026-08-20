@@ -1,5 +1,5 @@
 NAME		= libft.a
-SRCS		= ${wildcard srcs/*.c}
+SRCS		= ${wildcard *.c}
 OBJS		= ${SRCS:.c=.o}
 CC		= cc
 AR		= ar
