@@ -1,8 +1,11 @@
 #include "libft.h"
 
-void ft_putstr_fd(char *s, int fd) {
-  int len;
+void	ft_putstr_fd(char *s, int fd)
+{
+	int	len;
 
-  len = ft_strlen(s);
-  write(fd, s, len);
+	if (!s)
+		return ;
+	len = ft_strlen(s);
+	write(fd, s, len);
 }
