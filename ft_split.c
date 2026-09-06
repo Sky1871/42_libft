@@ -6,7 +6,7 @@
 /*   By: kseltenr <kseltenr@student.42vienna.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/06 00:37:03 by kseltenr          #+#    #+#             */
-/*   Updated: 2026/09/06 00:37:03 by kseltenr         ###   ########.fr       */
+/*   Updated: 2026/09/06 02:34:28 by sky             ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,16 +17,23 @@ static char	**ft_alloc_split(char const *s, char c)
 	size_t	i;
 	char	**split;
 	size_t	total;
+	int		in_word;
 
 	i = 0;
 	total = 0;
+	in_word = 0;
 	while (s[i])
 	{
-		if (s[i] == c)
+		if (s[i] != c && !in_word)
+		{
+			in_word = 1;
 			total++;
+		}
+		else if (s[i] == c)
+			in_word = 0;
 		i++;
 	}
-	split = (char **)malloc(sizeof(char *) * (total + 2));
+	split = (char **)malloc(sizeof(char *) * (total + 1));
 	if (!split)
 		return (NULL);
 	return (split);
@@ -78,7 +85,7 @@ static void	*ft_split_by_char(char **split, char const *s, char c)
 	}
 	st.start = lt.start;
 	st.length = (i - lt.start);
-	if (i > lt.start && i > 0 && !f(split, s, &st, &lt))
+	if (i > lt.start && !f(split, s, &st, &lt))
 		return (NULL);
 	split[lt.length] = 0;
 	return (split);
