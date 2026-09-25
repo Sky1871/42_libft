@@ -73,14 +73,20 @@ By coding these functions, I compiled my own custom static library (libft.a). Th
 1. Compilation
 
 run in the terminal:
-```cd path/to/libft && make```
+```bash
+cd path/to/libft && make
+```
 
 3. Usage
 
 include this header in the code:
-```#include "libft.h"```
+```c
+#include "libft.h"
+```
 
 add these flags when compiling the code:
-```-lft -L path/to/libft.a -I path/to/libft.h```
+```bash
+-lft -L path/to/libft.a -I path/to/libft.h
+```
 
 # Resources
