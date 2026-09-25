@@ -90,3 +90,7 @@ add these flags when compiling the code:
 ```
 
 # Resources
+
+Manual pages of the functions, geeksforgeeks.org for understanding concepts better (eg. malloc, linked lists)
+
+AI was used to reformat some code, like replacing spaces with tabs and similar minor norm issues.
