@@ -9,11 +9,11 @@ By coding these functions, I compiled my own custom static library (libft.a). Th
 
 ##Functions from `<ctype.h>`##
 
-- [ft_isascii](/ft_isascii): test for ASCII character
-- [ft_isalnum](/ft_isalnum): alphanumeric character test
-- [ft_isalpha](/ft_isalpha): alphabetic character test
-- [ft_isdigit](/ft_isdigit): decimal-digit character test.
-- [ft_isprint](/ft_isprint): printing character test
+- [ft_isascii](/ft_isascii.c): test for ASCII character
+- [ft_isalnum](/ft_isalnum.c): alphanumeric character test
+- [ft_isalpha](/ft_isalpha.c): alphabetic character test
+- [ft_isdigit](/ft_isdigit.c): decimal-digit character test.
+- [ft_isprint](/ft_isprint.c): printing character test
 
 #Instructions#
 
