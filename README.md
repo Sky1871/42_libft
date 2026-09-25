@@ -77,7 +77,7 @@ run in the terminal:
 cd path/to/libft && make
 ```
 
-3. Usage
+2. Usage
 
 include this header in the code:
 ```c
