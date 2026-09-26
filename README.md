@@ -70,24 +70,24 @@ By coding these functions, I compiled my own custom static library (libft.a). Th
 
 # Instructions
 
-1. Compilation
-
+## 1. Compilation
 run in the terminal:
 ```bash
 cd path/to/libft && make
 ```
 
-2. Usage
-
-include this header in the code:
+## 2. Usage
+- include this header in the code:
 ```c
 #include "libft.h"
 ```
-
-add these flags when compiling the code:
+- add these flags when compiling the code:
 ```bash
 -lft -L path/to/libft.a -I path/to/libft.h
 ```
+
+## 3. Tester
+I used this tester: [libftTester](https://github.com/Tripouille/libftTester)
 
 # Resources
 
